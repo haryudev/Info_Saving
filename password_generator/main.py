@@ -112,7 +112,7 @@ website_text.focus()
 email_user = Label(text="Email/Username:")
 email_user_text = Entry(width=35)
 email_exists = os.path.exists("Email.json")
-variable_saved_email = ""
+variable_saved_email = email_user_text.get()
 if email_exists:
     try:
         saved_email = open("Email.json", 'r')
